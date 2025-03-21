@@ -36,7 +36,7 @@ With a strong focus on creating **seamless user experiences** and **efficient sy
 ### 📫 Connect With Me
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/developermsaqib)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-saqib-97b472289)
-**Email:** contact.msaqib@gmail.com(mailto:contact.msaqib@gmail.com)
+📧 **Email:** [contact.msaqib@gmail.com](mailto:contact.msaqib@gmail.com)
 
 ---
 
