@@ -1,9 +1,3 @@
-- 👋 Hi, I’m @developermsaqib
-- 👀 I’m interested in web development
-- 🌱 I’m currently learning php laravel framework
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me : mail on contact.msaqib@gmail.com
-
 # 👋 Hi, I'm Muhammad Saqib!
 
 🚀 Full-Stack Web Developer | 💻 Node.js, Express, React, MongoDB, MySQL  
