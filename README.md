@@ -24,6 +24,11 @@ With a strong focus on creating **seamless user experiences** and **efficient sy
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-008000?style=flat)
+![WebRTC](https://img.shields.io/badge/WebRTC-008000?style=flat&logo=webrtc&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-269539?style=flat&logo=nginx&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-FEBA00?style=flat&logo=cloudinary&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
 
 ---
