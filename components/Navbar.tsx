@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link href="/" className="text-2xl font-bold text-primary">
-          Msaqib
+          DeveloperMsaqib
         </Link>
         <div className="space-x-6">
           {["Home", "About", "Projects", "Skills", "Contact"].map((section) => (
