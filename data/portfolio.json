@@ -1,0 +1,52 @@
+{
+  "name": "Muhammad Saqib",
+  "role": "Software Engineer",
+  "tagline": "Building Scalable and Innovative Software Solutions",
+  "bio": "Full‑Stack Software Engineer with experience in Node.js, Express, React, MongoDB, MySQL, Laravel/PHP, WebRTC, and more.",
+  "projects": [
+    {
+      "id": "salon-backend",
+      "name": "Salon Backend API",
+      "description": "Backend API for salon management using Node.js, Express, MongoDB, JWT authentication",
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+      "repoLink": "https://github.com/developermsaqib/salon-backend",
+      "liveDemo": null
+    },
+    {
+      "id": "webrtc-call",
+      "name": "WebRTC Audio Call App",
+      "description": "A simplified audio calling app using WebRTC and Node.js signalling server",
+      "technologies": ["WebRTC", "Node.js", "Express"],
+      "repoLink": "https://github.com/developermsaqib/simple-webrtc-audio-call-app",
+      "liveDemo": null
+    },
+    {
+      "id": "speech-tts",
+      "name": "Speech‑to‑Text via DeepSpeech",
+      "description": "Experimental transcription app with Mozilla DeepSpeech integration",
+      "technologies": ["JavaScript", "DeepSpeech", "Node.js"],
+      "repoLink": "https://github.com/developermsaqib/speech-to-text-transcription-deepspeech",
+      "liveDemo": null
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "React",
+    "MongoDB",
+    "MySQL",
+    "WebRTC",
+    "Docker",
+    "JWT",
+    "Laravel",
+    "PHP",
+    "Tailwind CSS"
+  ],
+  "contact": {
+    "email": "msaqib@example.com",
+    "github": "https://github.com/developermsaqib",
+    "linkedin": "https://linkedin.com/in/developermsaqib"
+  }
+}
