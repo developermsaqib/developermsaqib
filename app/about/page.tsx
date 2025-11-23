@@ -6,7 +6,7 @@ return (
 <main className="mt-16">
 <SectionTitle title="About Me" />
 <p className="text-gray-700 leading-relaxed">
-I'm Muhammad Saqib — a Full-Stack Software Engineer with strong backend focus.
+I&apos;m Muhammad Saqib — a Full-Stack Software Engineer with strong backend focus.
 I work with Node.js, Express, MongoDB, WebRTC, Docker, and message queues.
 </p>
 
