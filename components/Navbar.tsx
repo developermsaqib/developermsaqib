@@ -1,6 +1,6 @@
 // "use client";
 
-// import Link from "next/link";
+import Link from "next/link";
 // import { useState } from "react";
 
 // export default function NavBar() {
@@ -74,8 +74,8 @@ return (
 <nav className="flex justify-between items-center py-6">
 <h1 className="text-xl font-semibold">DeveloperMsaqib</h1>
 <div className="space-x-6 text-sm font-medium">
-<a href="/" className="hover:text-blue-600">Home</a>
-<a href="/about" className="hover:text-blue-600">About</a>
+<Link href="/" className="hover:text-blue-600">Home</Link>
+<Link href="/about" className="hover:text-blue-600">About</Link>
 <a href="/projects" className="hover:text-blue-600">Projects</a>
 <a href="/experience" className="hover:text-blue-600">Experience</a>
 <a href="/contact" className="hover:text-blue-600">Contact</a>

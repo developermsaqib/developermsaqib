@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Menu, X, Mail, ArrowRight, ExternalLink } from 'lucide-react';
 
 export default function DarkPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [ setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -22,7 +22,7 @@ export default function DarkPortfolio() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     alert('Message sent successfully!');
@@ -98,7 +98,6 @@ export default function DarkPortfolio() {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   className="text-gray-300 hover:text-white transition-colors relative group"
-                  onClick={() => setActiveSection(item.toLowerCase())}
                 >
                   {item}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
@@ -125,7 +124,6 @@ export default function DarkPortfolio() {
                   className="block text-gray-300 hover:text-white transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    setActiveSection(item.toLowerCase());
                   }}
                 >
                   {item}
@@ -173,13 +171,13 @@ export default function DarkPortfolio() {
               <h2 className="text-4xl font-bold mb-6">About Me</h2>
               <div className="space-y-4 text-gray-400 leading-relaxed">
                 <p>
-                  I'm a passionate developer with a keen eye for design and a love for creating seamless digital experiences. With years of experience in web and mobile development, I bring ideas to life through clean code and intuitive interfaces.
+                  I&apos;m a passionate developer with a keen eye for design and a love for creating seamless digital experiences. With years of experience in web and mobile development, I bring ideas to life through clean code and intuitive interfaces.
                 </p>
                 <p>
                   My approach combines technical expertise with creative problem-solving, ensuring every project not only meets but exceeds expectations. I specialize in modern frameworks and love staying at the forefront of technology.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
                 </p>
               </div>
               <div className="mt-8 flex gap-4">
@@ -195,9 +193,15 @@ export default function DarkPortfolio() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm border border-gray-800"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl">👨‍💻</div>
+              <div className="aspect-square rounded-2xl overflow-hidden border border-gray-800">
+                <Image
+                  src="/msaqib2.png"
+                  alt="Muhammad Saqib"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -246,9 +250,11 @@ export default function DarkPortfolio() {
                 className="group relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-all duration-300"
               >
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -279,7 +285,7 @@ export default function DarkPortfolio() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Have a project in mind? Let's work together to create something amazing
+              Have a project in mind? Let&apos;s work together to create something amazing
             </p>
           </div>
           <div className="space-y-6">
