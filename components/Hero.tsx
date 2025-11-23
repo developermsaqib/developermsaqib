@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
 return (
 <section className="mt-20 text-center">
@@ -11,12 +13,12 @@ Full Stack Developer — Backend Focus
 
 
 <div className="mt-6 flex justify-center gap-4">
-<a href="/projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+<Link href="/projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
 View Projects
-</a>
-<a href="/Muhammad-Saqib-CV.pdf" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">
+</Link>
+<Link href="/Muhammad-Saqib-CV.pdf" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50">
 Download CV
-</a>
+</Link>
 </div>
 </section>
 );
