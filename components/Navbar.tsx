@@ -76,9 +76,9 @@ return (
 <div className="space-x-6 text-sm font-medium">
 <Link href="/" className="hover:text-blue-600">Home</Link>
 <Link href="/about" className="hover:text-blue-600">About</Link>
-<a href="/projects" className="hover:text-blue-600">Projects</a>
-<a href="/experience" className="hover:text-blue-600">Experience</a>
-<a href="/contact" className="hover:text-blue-600">Contact</a>
+<Link href="/projects" className="hover:text-blue-600">Projects</Link>
+<Link href="/experience" className="hover:text-blue-600">Experience</Link>
+<Link href="/contact" className="hover:text-blue-600">Contact</Link>
 </div>
 </nav>
 );
