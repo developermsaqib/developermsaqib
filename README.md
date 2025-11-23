@@ -55,4 +55,4 @@ With a strong focus on creating **seamless user experiences** and **efficient sy
 
 ---
 
-⭐ **Check out my projects and let's collaborate!** 🚀
+⭐ ***Check out my projects and let's collaborate!*** 🚀
