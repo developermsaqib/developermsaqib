@@ -1,27 +1,25 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import NavBar from "@/components/Navbar";
+import type { Metadata } from "next";
+import "./global.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "M Saqib | Portfolio",
-  description: "Full Stack Software Engineer Portfolio",
+export const metadata: Metadata = {
+title: "Muhammad Saqib | Full Stack Developer",
+description: "Portfolio website of Muhammad Saqib — Backend-focused Developer.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${inter.className} bg-white text-gray-900 dark:bg-gray-900 dark:text-white`}
-      >
-        <NavBar />
-        <main className="container mx-auto px-4">{children}</main>
-      </body>
-    </html>
-  );
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+return (
+<html lang="en">
+<body className="bg-gray-50 text-gray-900">
+<div className=" mx-auto px-6">
+{/* <Navbar /> */}
+{children}
+{/* <Footer /> */}
+</div>
+</body>
+</html>
+);
 }

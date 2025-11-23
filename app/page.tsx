@@ -1,56 +1,43 @@
-import portfolio from "@/data/portfolio.json";
-import ProjectCard from "@/components/ProjectCard";
-import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/Footer";
+import Hero from "../components/Hero";
+import { SectionTitle } from "../components/SectionTitle";
+import ProjectCard from "../components/ProjectCard";
+
 
 export default function HomePage() {
-  return (
-    <div className="space-y-20 py-12">
-      {/* Hero Section */}
-      <section id="home" className="text-center space-y-4">
-        <h1 className="text-4xl font-bold">{portfolio.name}</h1>
-        <h2 className="text-xl text-secondary">{portfolio.role}</h2>
-        <p className="max-w-xl mx-auto">{portfolio.tagline}</p>
-      </section>
+return (
+<main>
+<Hero />
 
-      {/* About Section */}
-      <section id="about" className="max-w-2xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">About Me</h2>
-        <p>{portfolio.bio}</p>
-      </section>
 
-      {/* Projects Section */}
-      <section id="projects">
-        <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {portfolio.projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
+<section className="mt-16">
+<SectionTitle title="Featured Projects" />
 
-      {/* Skills Section */}
-      <section id="skills" className="text-center">
-        <h2 className="text-2xl font-bold mb-4">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-3">
-          {portfolio.skills.map((skill) => (
-            <span
-              key={skill}
-              className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold mb-4 text-center">Contact</h2>
-        <ContactForm />
-      </section>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+<ProjectCard
+title="Salon Backend API"
+description="Backend API for salon management with JWT auth, scheduling & reporting."
+tech="Node.js, Express, MongoDB, JWT, Docker"
+link="https://github.com/developermsaqib"
+/>
 
-      <Footer {...portfolio.contact} />
-    </div>
-  );
+
+<ProjectCard
+title="WebRTC Audio Call App"
+description="Real-time audio calling demo using WebRTC & Node.js signalling."
+tech="WebRTC, Node.js, Express"
+link="https://github.com/developermsaqib"
+/>
+
+
+<ProjectCard
+title="Speech-to-Text (DeepSpeech)"
+description="Offline speech recognition pipeline using DeepSpeech."
+tech="DeepSpeech, Node.js"
+link="https://github.com/developermsaqib"
+/>
+</div>
+</section>
+</main>
+);
 }
