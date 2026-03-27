@@ -3,16 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X, Mail, ArrowRight, ExternalLink } from "lucide-react";
+import ContactForm from "../../components/ContactForm";
 
 export default function DarkPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,13 +16,6 @@ export default function DarkPortfolio() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Message sent successfully!");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
 
   const projects = [
     {
@@ -392,50 +380,7 @@ export default function DarkPortfolio() {
             </p>
           </div>
           <div className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                className="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl focus:border-blue-500 focus:outline-none transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                className="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl focus:border-blue-500 focus:outline-none transition-colors"
-              />
-            </div>
-            <input
-              type="text"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={(e) =>
-                setFormData({ ...formData, subject: e.target.value })
-              }
-              className="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl focus:border-blue-500 focus:outline-none transition-colors"
-            />
-            <textarea
-              rows={6}
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-              className="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-xl focus:border-blue-500 focus:outline-none transition-colors resize-none"
-            ></textarea>
-            <button
-              onClick={handleSubmit}
-              className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
-            >
-              Send Message
-            </button>
+            <ContactForm />
           </div>
         </div>
       </section>
